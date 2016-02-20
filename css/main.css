@@ -40,7 +40,6 @@ body{
 #sidebar ul li a{
 	margin-left: 28px;
 	color:#ffffff;	
-	display: block;
 	height: 60px;
 	font-family: lato;
 	text-decoration: none;
@@ -76,6 +75,8 @@ header{
 	width: 100%;
 	height: 50px;
 	display: block;
+
+
 }
 
 /*profile and menu*/
@@ -84,7 +85,7 @@ header{
         margin: 0;
         font-family:  Verdana;
         float: right;
-        margin-right: 3%;       
+        margin-right: 2.5%;       
 }
 #menu li{
 	display: inline-block;	
@@ -102,10 +103,32 @@ header{
 #topmenu{
 	background:#0e1a35;
 	width: 160px;
-	height: 325px;
-	display: block;
-	position: absolute;
-	margin-top: 50px;
+	height: 325px;	
 	float: right;	
-	top: 0px;	
+	display: none;		
+}
+#topmenu.menuup{
+  display:block;  
+}
+#butmenu{
+	cursor: pointer;
+}
+
+#topmenu ul li{
+	list-style:none ;
+	text-align: left;
+}
+#topmenu ul li a{
+	margin-left: 55px;
+	color:#ffffff;
+	height: 47px;	
+	font-family: lato;
+	text-decoration: none;
+	display:inline-block;	
+	padding-top: 14px;
+
+}
+#topmenu ul li:hover{	
+	background-color:#122143;
+	cursor: pointer;
 }

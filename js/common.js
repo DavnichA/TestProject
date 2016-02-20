@@ -3,3 +3,10 @@ $(document).ready(function(){
 		$('#sidebar').toggleClass('visible');
 	});
 });
+
+$(document).ready(function(){
+	$('#butmenu').click(function(){
+		$('#topmenu').toggleClass('menuup');
+
+	});
+});
