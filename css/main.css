@@ -8,7 +8,9 @@ body{
 	padding: 0px;
 	background-color:#eef1f7;
 }
-/*left menu*/
+
+/*Боковое меню*/
+
 #sidebar{
 	background:#0e1a36;
 	width: 230px;
@@ -18,7 +20,9 @@ body{
 	left: -230px;
 	top: 0px;
 	transition:left 0.3s linear;
+	z-index: 100;
 }
+
 #sidebar.visible{
 	left: 0px;
 	transition:left 0.3s linear;
@@ -28,15 +32,18 @@ body{
 	margin-top: 76px;
 	
 }
+
 #sidebar ul li{
 	list-style:none ;
 	text-align: left;	
 }
+
 #sidebar ul li:hover{
   background-color:#122143;
   cursor: pointer;
   border-left:8px solid #5584ff;
 }
+
 #sidebar ul li a{
 	margin-left: 28px;
 	color:#ffffff;	
@@ -46,6 +53,7 @@ body{
 	display:inline-block;	
 	padding-top: 18px;	
 }
+
 .ico{
 	margin-left: 28px;
 }
@@ -62,24 +70,25 @@ body{
 	top: 0px;
 	right: -60px;
 }
+
 #sidebar-btn span{
 	height: 3px;
 	background: #111;
 	margin-bottom: 5px;
 	display: block;	
 }
-/*left menu end*/
+
+/*Конец стилей бокового меню*/
 
 header{
 	background-color: #fff;
 	width: 100%;
 	height: 50px;
 	display: block;
-
-
 }
 
-/*profile and menu*/
+/*Профиль*/
+
 #menu {
         padding: 0;
         margin: 0;
@@ -87,29 +96,37 @@ header{
         float: right;
         margin-right: 2.5%;       
 }
+
 #menu li{
 	display: inline-block;	
 }
+
 #menu li a{
 	color: black;
 	font-family: lato;
 	font-size: 16px;
 }
+
 #menu img{
 	margin-right: 15px;
 	margin-top: 6px;
 }
 
+/*Меню пользователя*/
+
 #topmenu{
 	background:#0e1a35;
 	width: 160px;
-	height: 325px;	
+	height: 288px;	
 	float: right;	
-	display: none;		
+	display: none;
+	z-index: 150;		
 }
+
 #topmenu.menuup{
   display:block;  
 }
+
 #butmenu{
 	cursor: pointer;
 }
@@ -118,6 +135,7 @@ header{
 	list-style:none ;
 	text-align: left;
 }
+
 #topmenu ul li a{
 	margin-left: 55px;
 	color:#ffffff;
@@ -128,7 +146,92 @@ header{
 	padding-top: 14px;
 
 }
+
 #topmenu ul li:hover{	
 	background-color:#122143;
 	cursor: pointer;
 }
+
+/*Общая информация*/
+
+#general_information {
+	background-color: #fff;
+	margin-top: 10px;
+	height: 338px;
+	z-index: -100;	
+}
+
+#general_information h3{
+	text-align: center;
+	font-family: lato;
+	padding-top: 20px;
+	opacity: 0.8;
+}
+
+#general_information img{
+  max-width: 100px;
+  float: left;
+  border-radius: 50%;
+  margin-left: 18px;
+   
+}
+
+#Name {		
+	margin-left: 50px;
+	font-family: lato;	
+	float: left;
+
+}
+#NameBox{
+	float: left;
+	width: 370px;
+	margin-left:50px;
+	margin-top: 5px;	
+}
+
+#forms{
+	display: inline-block;
+}
+
+#ContactPerson{
+	margin-top: 20px;
+	margin-left: 50px;
+	font-family: lato;
+	
+}
+#ContactBox{    
+	width: 370px;
+	margin-left:50px;		
+}
+
+.Phone{
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 50px;
+	font-family: lato;
+}
+.PhoneBox{
+    width: 175px;
+	margin-left:50px;
+}
+.Site{
+	display: inline-block;
+	margin-left: 143px;
+	font-family: lato;
+}
+.SiteBox{
+	width: 175px;
+	margin-left: 15px;
+}
+.Language{
+	display: inline-block;
+	margin-left: 162px;
+	font-family: lato;
+}
+
+.check{
+	width: 25px;
+	height: 25px;
+	background: blue;
+}
+
